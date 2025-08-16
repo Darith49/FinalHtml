@@ -8,9 +8,9 @@ Member of the project consist of 6 :
   
   -Horn Bonhong 
   
-  -Chou Lucksing
+  -Chhou Lucksing
   
-  -Ros Visothepong
+  -Ros Vesothepong
   
   -Cheang Borin
   
