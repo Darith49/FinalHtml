@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TechShop - Minimal Store</title>
+<title>AutoForge - Car Accessories Store</title>
 <style>
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-    } 
+    }
 
     :root {
         --primary: #2563eb;
@@ -616,7 +616,7 @@
 <header>
     <div class="container">
         <div class="header-content">
-            <a href="#home" class="logo">TechShop</a>
+            <a href="#home" class="logo">AutoForge</a>
             <nav>
                 <a href="#home">Home</a>
                 <a href="#products">Products</a>
@@ -631,8 +631,8 @@
 
 <section id="home" class="hero">
     <div class="container">
-        <h1>Simple Tech Store</h1>
-        <p>Clean, minimal shopping experience for modern tech products</p>
+        <h1>Premium Car Accessories</h1>
+        <p>Upgrade your ride with quality automotive accessories and parts</p>
         <a href="#products" class="cta-button">Browse Products</a>
     </div>
 </section>
@@ -659,7 +659,7 @@
 
 <footer>
     <div class="container">
-        <p>&copy; 2025 TechShop. Simple coding project.</p>
+        <p>&copy; 2025 AutoForge. Quality automotive accessories.</p>
     </div>
 </footer>
 
@@ -691,51 +691,99 @@
     const products = [
         { 
             id: 1, 
-            name: "Wireless Headphones", 
-            price: 79, 
-            image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop",
-            description: "Quality wireless headphones for everyday use",
-            features: ["Bluetooth 5.0", "8-hour battery", "Comfortable fit", "Good sound quality"]
+            name: "Car Phone Mount", 
+            price: 25, 
+            image: "https://imgs.search.brave.com/NrH0zPyXNn9chSiV_yOaIqC3AD3FCBo-VkOiX-6Uq8Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/ODFnR2l4NkdOdUwu/anBn",
+            description: "Secure phone mounting system for dashboard",
+            features: ["360° rotation", "One-handed operation", "Universal compatibility", "Strong grip"]
         },
         { 
             id: 2, 
-            name: "Smart Watch", 
-            price: 129, 
-            image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop",
-            description: "Basic fitness tracking and notifications",
-            features: ["Heart rate monitor", "Step counter", "Water resistant", "7-day battery"]
+            name: "Dash Cam", 
+            price: 89, 
+            image: "https://imgs.search.brave.com/Ug7rGFUEVED6qRAKoiGvTjLhNHw3SPk9U1OrRiragFI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTIy/NDU0MjQzOC9waG90/by9kYXNoY2FtLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1I/aXBnYUl5UEd1STR5/QjFkWHFwOXhhckZF/Sng3N2d3TGhKQkgz/dDhPR3pnPQ",
+            description: "High-definition dashboard camera for safety",
+            features: ["1080p recording", "Night vision", "Loop recording", "G-sensor"]
         },
         { 
             id: 3, 
-            name: "Running Shoes", 
-            price: 89, 
-            image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=300&fit=crop",
-            description: "Comfortable running shoes for daily exercise",
-            features: ["Lightweight", "Breathable mesh", "Good cushioning", "Durable sole"]
+            name: "Car Seat Covers", 
+            price: 45, 
+            image: "https://imgs.search.brave.com/k7Jq9ARtNL6OQWEkzBy0QJwL_XvysaE1L_28a8WLrv0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL3ZhZGVyLXBy/b2QuczMuYW1hem9u/YXdzLmNvbS8xNjMz/MDE1ODAyLTQxeEF1/Zk1PNW1MLl9TTDUw/MF8uanBnP2Nyb3A9/MXh3OjF4aDtjZW50/ZXIsdG9wJnJlc2l6/ZT05ODA6Kg",
+            description: "Premium leather-style seat protection",
+            features: ["Easy installation", "Water resistant", "Universal fit", "Premium material"]
         },
         { 
             id: 4, 
-            name: "Laptop Backpack", 
-            price: 45, 
-            image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=300&fit=crop",
-            description: "Simple backpack with laptop compartment",
-            features: ["15-inch laptop slot", "Multiple pockets", "Water resistant", "Comfortable straps"]
+            name: "Trunk Organizer", 
+            price: 35, 
+            image: "https://imgs.search.brave.com/Alr73QqZMnRJYO7MI79drgTN3EEdYZNJaEkD6BQyGSU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzUzMzExMTc4L3Iv/aWwvMTk0NmNmLzYx/MDMxMzUwNDIvaWxf/MzAweDMwMC42MTAz/MTM1MDQyX2lqM2wu/anBn",
+            description: "Collapsible storage solution for your trunk",
+            features: ["Multiple compartments", "Foldable design", "Non-slip base", "Durable fabric"]
         },
         { 
             id: 5, 
-            name: "Sunglasses", 
-            price: 35, 
-            image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=300&fit=crop",
-            description: "Basic UV protection sunglasses",
-            features: ["UV400 protection", "Polarized lenses", "Lightweight frame", "Classic style"]
+            name: "Car Air Freshener", 
+            price: 12, 
+            image: "https://imgs.search.brave.com/mZGCiTos6TNo0jVF6HB576UheHz2L31XyfMBG_jb9PY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzE1LzY5Lzk4LzUy/LzM2MF9GXzE1Njk5/ODUyNDJfMWVFSG1Y/aWJneXp5Q2J2WmxF/emd4VGNOa25US043/NnAuanBn",
+            description: "Long-lasting fragrance for your vehicle",
+            features: ["Natural ingredients", "Long-lasting scent", "Easy installation", "Multiple fragrances"]
         },
         { 
             id: 6, 
-            name: "Digital Camera", 
-            price: 299, 
-            image: "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=400&h=300&fit=crop",
-            description: "Entry-level digital camera for photography",
-            features: ["20MP sensor", "1080p video", "Easy controls", "Built-in flash"]
+            name: "LED Headlight Bulbs", 
+            price: 65, 
+            image: "https://imgs.search.brave.com/LejrrmBNGodGvNp0UD3y2QeLDJ5N2oT7RiHX-ZBHhCw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y2FyaWZleC5jb20v/Y2RuL3Nob3AvZmls/ZXMvY2FyaWZleC1j/b21wYWN0LWxlZC1o/ZWFkbGlnaHRzLWNv/bXBhY3QtaDQtbGVk/LWhlYWRsaWdodC1i/dWxicy00MTgzMzY4/ODk1NzI0Ny5qcGc_/dj0xNjg3NTE2MjU0/JndpZHRoPTUzMw",
+            description: "Ultra-bright LED conversion kit",
+            features: ["6000K white light", "50,000 hour lifespan", "Easy installation", "Waterproof design"]
+        },
+        { 
+            id: 7, 
+            name: "Car Vacuum Cleaner", 
+            price: 55, 
+            image: "https://imgs.search.brave.com/Lf6e3FuWYDhVcO0MdDt1HcAHv9QejqfzYKQivQUzkDQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9keXNv/bi1oLmFzc2V0c2Fk/b2JlMi5jb20vaXMv/aW1hZ2UvY29udGVu/dC9kYW0vZHlzb24v/cHJvZHVjdHMvdmFj/dXVtLWNsZWFuZXJz/LWNhdGVnb3J5L2hh/bmRoZWxkcy9jYXIt/Ym9hdC9vdmVydmll/dy9DYXJfQm9hdF9W/OF9IYW5kaGVsZF9T/RU9fUHJvZHVjdF9I/ZXJvLmpwZz8kcmVz/cG9uc2l2ZSQ",
+            description: "Compact handheld vacuum for car interiors",
+            features: ["12V power", "HEPA filter", "Multiple attachments", "Lightweight design"]
+        },
+        { 
+            id: 8, 
+            name: "Steering Wheel Cover", 
+            price: 18, 
+            image: "https://imgs.search.brave.com/3P3Ks8oLahDAFeuCVPw3sMrGIrx_w7pxzOS5GsPoe2Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Zmhncm91cGF1dG8u/Y29tL2Nkbi9zaG9w/L3Byb2R1Y3RzL2Zo/MjAyMm9yYW5nZS0y/LmpwZz92PTE2OTE1/MjEzNjImd2lkdGg9/MjAwMA",
+            description: "Comfortable grip enhancement for steering",
+            features: ["Anti-slip texture", "Breathable material", "Easy installation", "Universal size"]
+        },
+        { 
+            id: 9, 
+            name: "Car Floor Mats", 
+            price: 32, 
+            image: "https://imgs.search.brave.com/_-GKUHZEOMepePbFEef7dciGMOt31469pn5aVI2xJ2o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudGhkc3RhdGlj/LmNvbS9wcm9kdWN0/SW1hZ2VzLzQ1YjMy/ZmRiLTNjM2MtNDU3/YS1hMmMyLTI3NjJi/MDM2MDM4NS9zdm4v/YmxhY2tzLWZoLWdy/b3VwLWZsb29yLW1h/dHMtZG1mMTEzMDVi/bGFjay1lNF82MDAu/anBn",
+            description: "All-weather protection for car floors",
+            features: ["Waterproof material", "Custom fit", "Anti-slip backing", "Easy to clean"]
+        },
+        { 
+            id: 10, 
+            name: "USB Car Charger", 
+            price: 15, 
+            image: "https://imgs.search.brave.com/-udqgvnqoU_DKc0po4famU8Wus3X3bqiC3VgZj5g9Tk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9waG9u/ZXJlYmVsLmNvbS9j/ZG4vc2hvcC9wcm9k/dWN0cy80NXctZHVh/bC11c2ItYy1mYXN0/LWNhci1jaGFyZ2Vy/LTgyNzUwMF80MDB4/LndlYnA_dj0xNjk5/NjIzODY2",
+            description: "Fast charging adapter for mobile devices",
+            features: ["Dual USB ports", "Fast charge 3.0", "LED indicator", "Compact design"]
+        },
+        { 
+            id: 11, 
+            name: "Blind Spot Mirrors", 
+            price: 22, 
+            image: "https://imgs.search.brave.com/AQlc_Qr6OztTa3dIo24NyRpxXDfgZmQdX0iS9w22aCw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzcxNlpmeVZQeS1M/LmpwZw",
+            description: "Wide-angle mirrors for enhanced visibility",
+            features: ["HD glass", "360° adjustment", "Easy installation", "Universal compatibility"]
+        },
+        { 
+            id: 12, 
+            name: "Car Emergency Kit", 
+            price: 75, 
+            image: "https://imgs.search.brave.com/k24TF0Jb_5yc4YKt3blFfVkbn-FzKjmUvWkB3_FnO1M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzF2cGU5T1MxQUwu/anBn",
+            description: "Complete roadside assistance toolkit",
+            features: ["Jumper cables", "Emergency flares", "First aid supplies", "Compact storage"]
         }
     ];
 
@@ -888,7 +936,7 @@
         receiptBody.innerHTML = `
             <div class="receipt">
                 <div class="receipt-header">
-                    <div class="receipt-logo">TechShop</div>
+                    <div class="receipt-logo">AutoForge</div>
                     <div class="receipt-date">${date}</div>
                 </div>
                 
